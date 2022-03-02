@@ -1,7 +1,7 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import data from "../database/data.json";
-import Publication from "./Publication";
+import Publication from "./Publication/Publication";
 
 function Posts() {
   const [publications, setPublications] = useState([]);
@@ -36,6 +36,7 @@ function Posts() {
                 date={publication.info.date}
                 place={publication.info.place}
                 key={publication.id}
+                source={publication.file.url}
                 confirmation={
                   publication.invited_people // Se existem convidados, exibir quantos confirmaram
                     ? publication.invited_people.length + " CONFIRMAÇÕES DE 15"

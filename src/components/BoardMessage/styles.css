@@ -1,0 +1,23 @@
+.outerBox {
+  background-color: #fff2de;
+  padding: 20px;
+  width: 279px;
+  border: 1px solid #dcd1c0;
+  margin-top: 35px;
+}
+
+p {
+  text-transform: none;
+  font-size: 14px;
+}
+
+.dismissButton {
+  width: 112px;
+  height: 37px;
+  font-weight: 700;
+  font-family: Roboto;
+  cursor: pointer;
+  background-color: inherit;
+  border: 1px solid #707070;
+  border-radius: 5px;
+}

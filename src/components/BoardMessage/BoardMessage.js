@@ -1,5 +1,7 @@
 import React from "react";
 import { useState } from "react";
+import "./styles.css";
+
 function BoardMessage() {
   const [visible, setVisible] = useState(true);
 
@@ -8,7 +10,7 @@ function BoardMessage() {
   };
 
   return visible ? ( // Se o state visible for TRUE, retorna o conteúdo;
-    <div>
+    <div className="outerBox">
       <h2>Endomarketing</h2>
       <p>
         Endomarketing está relacionado às ações de treinamento ou qualificação
@@ -17,6 +19,7 @@ function BoardMessage() {
         Endomarketing mesmo sendo conceitos diferentes.
       </p>
       <button
+        className="dismissButton"
         onClick={() => {
           handleDismiss(); // Função que gerencia o state visible;
         }}

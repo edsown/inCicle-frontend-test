@@ -1,7 +1,7 @@
 import React from "react";
 import Navbar from "./components/Navbar";
 import Posts from "./components/Posts";
-import BoardMessage from "./components/BoardMessage";
+import BoardMessage from "./components/BoardMessage/BoardMessage";
 import ManagementBoard from "./components/ManagementBoard";
 import ManagementPost from "./components/ManagementPost";
 

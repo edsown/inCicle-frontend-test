@@ -18,11 +18,23 @@ function ManagementPost(props) {
               <div>
                 <h4>{post.title}</h4>
               </div>
-              <div>
-                <img src={post.resume_files[0].file}></img>
-                <img src={post.resume_files[1].file}></img>
-                <img src={post.resume_files[2].file}></img>
-                <img src={post.resume_files[3].file}></img>
+              <div className="managementContent">
+                <img
+                  className="managementImage"
+                  src={post.resume_files[0].file}
+                ></img>
+                <img
+                  className="managementImage"
+                  src={post.resume_files[1].file}
+                ></img>
+                <img
+                  className="managementImage"
+                  src={post.resume_files[2].file}
+                ></img>
+                <img
+                  className="managementImage"
+                  src={post.resume_files[3].file}
+                ></img>
               </div>
             </div>
           );

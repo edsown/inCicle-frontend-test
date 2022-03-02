@@ -19,10 +19,12 @@ function Posts() {
 
   return (
     <div>
-      <div>
-        <h2>Endomarketing</h2>
-        <div>tipo</div>
-        <div>criar</div>
+      <div className="title">
+        <h1>Endomarketing</h1>
+        <div className="postOptions">
+          <div>TIPO</div>
+          <div>CRIAR</div>
+        </div>
       </div>
       <div>
         {publications.map((publication) => {

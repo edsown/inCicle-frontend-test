@@ -22,3 +22,17 @@ code {
 .nav-item {
   color: blue;
 }
+
+.postOptions {
+  display: flex;
+  align-items: flex-end;
+  gap: 9px;
+}
+.title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.content {
+  display: flex;
+}

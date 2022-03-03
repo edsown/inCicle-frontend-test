@@ -6,7 +6,11 @@ function Publication(props) {
   return (
     <div>
       <div className="outerContainer">
-        <img className="publicationImage" src={props.source}></img>
+        <img
+          alt="thumbnail"
+          className="publicationImage"
+          src={props.source}
+        ></img>
         <div className="contentContainer">
           <h2>{props.title}</h2>
           <p>

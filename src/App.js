@@ -3,7 +3,6 @@ import Navbar from "./components/Navbar";
 import Posts from "./components/Posts/Posts";
 import BoardMessage from "./components/BoardMessage/BoardMessage";
 import ManagementBoard from "./components/ManagementBoard/ManagementBoard";
-import ManagementPost from "./components/ManagementPost/ManagementPost";
 
 function App() {
   return (

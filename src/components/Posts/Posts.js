@@ -10,7 +10,7 @@ function Posts() {
   const defaultData = data.data;
 
   useEffect(() => {
-    setPublications(defaultData);
+    setPublications(data.data);
   }, []);
 
   const handleDelete = (id) => {

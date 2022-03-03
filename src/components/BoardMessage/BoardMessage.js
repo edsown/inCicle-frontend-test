@@ -12,7 +12,7 @@ function BoardMessage() {
   return visible ? ( // Se o state visible for TRUE, retorna o conteúdo;
     <div className="outerBox">
       <h2>Endomarketing</h2>
-      <p>
+      <p className="text">
         Endomarketing está relacionado às ações de treinamento ou qualificação
         dos colaboradores da empresa visando um melhor serviço para o cliente.
         Marketing interno, devido ao nome, é usualmente confundido com

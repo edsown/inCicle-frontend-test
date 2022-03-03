@@ -9,6 +9,13 @@
   align-items: center;
 }
 
+@media (max-width: 767px) {
+  .outerContainer {
+    width: 90vw;
+    height: 110px;
+  }
+}
+
 .publicationImage {
   height: 73px;
   margin-right: 16px;

@@ -1,7 +1,8 @@
 import React from "react";
 import { useState, useEffect } from "react";
-import data from "../database/data.json";
-import Publication from "./Publication/Publication";
+import data from "../../database/data.json";
+import Publication from "../Publication/Publication";
+import "./styles.css";
 
 function Posts() {
   const [publications, setPublications] = useState([]);
@@ -17,13 +18,57 @@ function Posts() {
     setPublications(newPosts);
   };
 
+  const filterPosts = (number) => {
+    switch (number) {
+      case 1: {
+        const newFiltered = publications.filter(
+          (publication) => publication.type === "event"
+        );
+
+        setPublications(newFiltered);
+        break;
+      }
+      case 2: {
+        const newFiltered = publications.filter(
+          (publication) => publication.type === "release"
+        );
+        setPublications(newFiltered);
+        break;
+      }
+      case 3: {
+        const newFiltered = publications.filter(
+          (publication) => publication.type === "publication"
+        );
+        setPublications(newFiltered);
+        break;
+      }
+      default: {
+        setPublications(data.data);
+        break;
+      }
+    }
+  };
+
   return (
     <div>
       <div className="title">
         <h1>Endomarketing</h1>
         <div className="postOptions">
-          <div>TIPO</div>
-          <div>CRIAR</div>
+          <div className="botaoTipo">
+            <select
+              className="select"
+              onChange={(e) => {
+                console.log(publications);
+                filterPosts(parseInt(e.target.value));
+              }}
+            >
+              <option value={0}>TIPO</option>
+              <option value={1}>EVENTO</option>
+              <option value={2}>COMUNICADO</option>
+              <option value={3}>PUBLICAÇÃO</option>
+            </select>
+          </div>
+          <div className="botaoCriar">CRIAR +</div>
         </div>
       </div>
       <div>

@@ -49,6 +49,15 @@ code {
   margin-top: 35px;
 }
 
+@media (max-width: 767px) {
+  .content {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin-top: 35px;
+  }
+}
+
 .managementImage {
   height: 60px;
 }
@@ -79,7 +88,7 @@ code {
 
 .type {
   color: white;
-  background-color: red;
+  background-color: navy;
   text-transform: uppercase;
   font-size: 7px;
   padding: 2px;

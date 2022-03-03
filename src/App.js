@@ -1,9 +1,9 @@
 import React from "react";
 import Navbar from "./components/Navbar";
-import Posts from "./components/Posts";
+import Posts from "./components/Posts/Posts";
 import BoardMessage from "./components/BoardMessage/BoardMessage";
-import ManagementBoard from "./components/ManagementBoard";
-import ManagementPost from "./components/ManagementPost";
+import ManagementBoard from "./components/ManagementBoard/ManagementBoard";
+import ManagementPost from "./components/ManagementPost/ManagementPost";
 
 function App() {
   return (

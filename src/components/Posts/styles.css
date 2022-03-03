@@ -1,0 +1,39 @@
+.botaoTipo {
+  background-color: white;
+  font-family: Roboto;
+  display: flex;
+  justify-content: space-between;
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #b4b4b4;
+  border-radius: 5px;
+}
+
+.botaoCriar {
+  background-color: #3489b1;
+  color: white;
+  font-weight: 700;
+  font-family: Roboto;
+  padding: 8px;
+  border: 1px solid #b4b4b4;
+  border-radius: 5px;
+  font-size: 14px;
+  width: 95px;
+}
+
+.title {
+  margin-bottom: -14.5px;
+}
+
+.select {
+  border: none;
+  width: 95px;
+}
+
+@media (max-width: 767px) {
+  .title {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+  }
+}

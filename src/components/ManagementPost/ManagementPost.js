@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
-import data from "../database/management.json";
+import data from "../../database/management.json";
+import "./styles.css";
 
 function ManagementPost(props) {
   const [managementPost, setManagementPost] = useState([]);

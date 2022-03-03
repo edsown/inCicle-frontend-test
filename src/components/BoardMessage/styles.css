@@ -21,3 +21,11 @@
   border: 1px solid #707070;
   border-radius: 5px;
 }
+
+@media (max-width: 767px) {
+  .outerBox {
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+  }
+}

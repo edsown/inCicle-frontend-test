@@ -6,8 +6,11 @@ import "./styles.css";
 
 function Posts() {
   const [publications, setPublications] = useState([]);
+
+  const defaultData = data.data;
+
   useEffect(() => {
-    setPublications(data.data);
+    setPublications(defaultData);
   }, []);
 
   const handleDelete = (id) => {
@@ -43,7 +46,7 @@ function Posts() {
         break;
       }
       default: {
-        setPublications(data.data);
+        setPublications(defaultData);
         break;
       }
     }
@@ -58,7 +61,6 @@ function Posts() {
             <select
               className="select"
               onChange={(e) => {
-                console.log(publications);
                 filterPosts(parseInt(e.target.value));
               }}
             >

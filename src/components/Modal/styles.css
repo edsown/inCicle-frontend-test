@@ -1,0 +1,19 @@
+.modal {
+  height: 300px;
+  width: 200px;
+  background-color: white;
+}
+
+.modalContainer {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modalText {
+  color: grey;
+}

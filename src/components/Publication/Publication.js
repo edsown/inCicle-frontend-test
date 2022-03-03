@@ -15,7 +15,10 @@ function Publication(props) {
           <h2>{props.title}</h2>
           <p>
             <span className="type">{props.type}</span> <span />
-            {props.place} | {props.date} | {props.confirmation}
+            {props.place} | {props.date} |{" "}
+            <a className="confirmationLink" onClick={props.openModal}>
+              {props.confirmation}
+            </a>
           </p>
           <p>{props.description}</p>
           <p>

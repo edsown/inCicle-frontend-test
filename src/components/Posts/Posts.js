@@ -4,7 +4,7 @@ import data from "../../database/data.json";
 import Publication from "../Publication/Publication";
 import "./styles.css";
 
-function Posts() {
+function Posts(props) {
   const [publications, setPublications] = useState([]);
 
   const defaultData = data.data;
@@ -84,6 +84,7 @@ function Posts() {
                 place={publication.info.place}
                 key={publication.id}
                 source={publication.file.url}
+                openModal={props.toggleFunction}
                 confirmation={
                   publication.invited_people // Se existem convidados, exibir quantos confirmaram
                     ? publication.invited_people.length + " CONFIRMAÇÕES DE 15"
